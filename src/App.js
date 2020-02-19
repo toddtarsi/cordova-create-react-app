@@ -3,6 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  componentDidCatch(err, info) {
+    this.props.Sentry.captureException(err);
+  }
   render() {
     return (
       <div className="App">
