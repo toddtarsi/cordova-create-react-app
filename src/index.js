@@ -1,4 +1,4 @@
-import Sentry from '@sentry/browser';
+import * as Sentry from '@sentry/browser';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -7,7 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 const startApp = () => {
   Sentry.init('WHATEVER_GOES_HERE');
-  ReactDOM.render(<App />, document.getElementById('root'));
+  ReactDOM.render(<App Sentry={Sentry} />, document.getElementById('root'));
   registerServiceWorker();
 };
 
