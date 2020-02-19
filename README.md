@@ -1,6 +1,7 @@
 # Cordova **Sentry** Create React App Tutorial
 
 **This is made to blow up so Sentry can see if anything is wrong with their stuff on modern cordova implementations**
+**Also, [this line needs stuff first](https://github.com/toddtarsi/cordova-create-react-app/blob/master/src/index.js#L9)**
 
 I was dissatisfied with tutorials that didn't meet my needs, boilerplate projects with incompatible dependencies, and yeoman generators with errors so I decided to make a tutorial to help others set up their initial project. Also if you're migrating an existing web app to Cordova, this will provide insight into what you need to get that to work.
 
