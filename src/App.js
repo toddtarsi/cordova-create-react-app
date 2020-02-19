@@ -11,8 +11,11 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          To get started, click the button for a crash.
         </p>
+        <button onClick={() => { throw new Error('This is an example error!') }}>
+          Throw an error
+        </button>
       </div>
     );
   }
